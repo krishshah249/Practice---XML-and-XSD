@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<musicians>
+	<musician>
+		<name>Joey Baron</name>
+		<instrument>Drums</instrument>
+		<NoOfRecordings>1</NoOfRecordings>
+	</musician>
+	<musician>
+		<name>Bill Frisell</name>
+		<instrument>Guitar</instrument>
+		<NoOfRecordings>3</NoOfRecordings>
+	</musician>
+	<musician>
+		<name>Don Byron</name>
+		<instrument>Clarinet</instrument>
+		<NoOfRecordings>2</NoOfRecordings>
+	</musician>
+	<musician>
+		<name>Dave Douglas</name>
+		<instrument>Trumpet</instrument>
+		<NoOfRecordings>1</NoOfRecordings>
+	</musician>
+</musicians>

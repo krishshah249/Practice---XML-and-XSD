@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UtF-8"?>
+<accountdetails>
+	<account accountId="1001">
+		<name>Lalitha</name>
+		<type>Savings</type>
+		<balance>10000</balance>
+	</account>
+	<account accountId="1002">
+		<name>Priyanka</name>
+		<type>Current</type>
+		<balance>4000</balance>
+	</account>
+	<account accountId="1003">
+		<name>Jansi</name>
+		<type>Current</type>
+		<balance>30000</balance>
+	</account>
+</accountdetails>

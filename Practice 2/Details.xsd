@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Defining Simple elements -->
+
+	<xs:attribute name="batch" type="xs:string" />
+
+	<xs:element name="name">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="batch" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<xs:element name="password">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[a-zA-Z0-9]{8}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+
+	<xs:element name="gender">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="male|female" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="age">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer">
+				<xs:minInclusive value="18" />
+				<xs:maxInclusive value="65" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="dob" type="xs:date" />
+
+	<xs:element name="bachelor" type="xs:boolean" />
+
+	<xs:element name="pivalue" type="xs:decimal" fixed="3.1485" />
+
+	<xs:element name="xmlref" type="xs:anyURI" />
+
+	<!--Defining Complex Elements -->
+
+	<xs:element name="details">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="age" />
+				<xs:element ref="gender" />
+				<xs:element ref="password" />
+				<xs:element ref="dob" />
+				<xs:element ref="bachelor" />
+				<xs:element ref="pivalue" />
+				<xs:element ref="xmlref" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+

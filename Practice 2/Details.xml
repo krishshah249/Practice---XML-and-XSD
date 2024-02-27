@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<details xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+xs:noNamespaceSchemaLocation="Details.xsd">
+
+	<name batch="Java">Krish</name>
+	<age>26</age>
+	<gender>male</gender>
+	<password>Krish123</password>
+	<dob>1997-03-21</dob>
+	<bachelor>true</bachelor>
+	<pivalue>3.1485</pivalue>
+	<xmlref>http://www.w3schools.com</xmlref>
+</details>
